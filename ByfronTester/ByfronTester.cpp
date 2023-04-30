@@ -5,4 +5,6 @@ int main()
 {
 	LoadLibrary(L"not-byfron.dll");
 	std::cout << "AyyLmao" << std::endl;
+	getchar();
+	return 0;
 }

@@ -53,6 +53,7 @@ void EncryptOldPages()
 {
 	if (LastUnlockedPages.size() > 0x100)
 	{
+		PRINTD("LastUnlockedPages.size() > 0x100\n");
 		auto address = LastUnlockedPages.front();
 		LastUnlockedPages.pop();
 		EncryptPage(address);
